@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LifeApp.Pages.Customize"
+             Title="Edit Avatar">
+    <StackLayout Margin="20, 10">
+        <Image Source="man.png"
+               BackgroundColor="White"
+               VerticalOptions="FillAndExpand"/>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100" />
+                <RowDefinition Height="100" />
+                <RowDefinition Height="100" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="50" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Image Source="shirt.png"
+                   VerticalOptions="CenterAndExpand"
+                   Grid.Row="0"
+                   Grid.Column="0"/>
+            <Label Text="Shirts"
+                   HorizontalTextAlignment="Center"
+                   VerticalOptions="Start"
+                   TextColor="Black"
+                   Grid.Row="0"
+                   Grid.Column="0"/>
+            <ScrollView Orientation="Horizontal"
+                        Grid.Row="0"
+                        Grid.Column="1"
+                        BackgroundColor="White"/>
+            <Image Source="trousers.png"
+                   VerticalOptions="CenterAndExpand"
+                   Grid.Row="1"
+                   Grid.Column="0"/>
+            <Label Text="Pants"
+                   HorizontalTextAlignment="Center"
+                   VerticalOptions="Start"
+                   TextColor="Black"
+                   Grid.Row="1"
+                   Grid.Column="0"/>
+            <ScrollView Orientation="Horizontal"
+                        Grid.Row="1"
+                        Grid.Column="1"
+                        BackgroundColor="White"/>
+            <Image Source="sneakers.png"
+                   VerticalOptions="CenterAndExpand"
+                   Grid.Row="2"
+                   Grid.Column="0"/>
+            <Label Text="Shoes"
+                   HorizontalTextAlignment="Center"
+                   VerticalOptions="Start"
+                   TextColor="Black"
+                   Grid.Row="2"
+                   Grid.Column="0"/>
+            <ScrollView Orientation="Horizontal"
+                        Grid.Row="2"
+                        Grid.Column="1"
+                        BackgroundColor="White"/>
+        </Grid>
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:LifeApp.Pages"
+             x:Class="LifeApp.Pages.AddTask"
+             Title="Add a Task!">
+    <ContentPage.Content>
+        <StackLayout Margin="20, 10">
+            <Entry x:Name="editTaskEntry"
+                   Text=""/>
+            <DatePicker x:Name="taskDueDate"/>
+            <Picker x:Name="taskType" 
+                    Title="Type of Task:">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Physical</x:String>
+                        <x:String>Mental</x:String>
+                        <x:String>Social</x:String>
+                        <x:String>Finacial</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+            <Button Text="Save Task"
+                    Clicked="SaveTask"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
